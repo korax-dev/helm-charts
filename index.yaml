@@ -27,6 +27,20 @@ entries:
     urls:
     - https://github.com/caleb-devops/helm-charts/releases/download/palworld-0.2.1/palworld-0.2.1.tgz
     version: 0.2.1
+  satisfactory:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2024-10-26T23:08:16.996509593Z"
+    description: Satisfactory Helm chart for Kubernetes
+    digest: dc2c9969b199dd3ec5c45c8eadfedb1c7db4b12cc35eab032481238058751491
+    home: https://github.com/korax-dev/helm-charts
+    name: satisfactory
+    sources:
+    - https://github.com/korax-dev/helm-charts
+    - https://github.com/wolveix/satisfactory-server
+    urls:
+    - https://github.com/korax-dev/helm-charts/releases/download/satisfactory-0.1.0/satisfactory-0.1.0.tgz
+    version: 0.1.0
   sons-of-the-forest:
   - apiVersion: v2
     appVersion: latest
@@ -94,4 +108,4 @@ entries:
     urls:
     - https://github.com/caleb-devops/helm-charts/releases/download/vrising-0.1.0/vrising-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-26T17:15:36.272175405Z"
+generated: "2024-10-26T23:08:16.996551762Z"
