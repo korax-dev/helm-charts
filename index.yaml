@@ -3,6 +3,19 @@ entries:
   palworld:
   - apiVersion: v2
     appVersion: latest
+    created: "2024-10-26T17:15:36.081938583Z"
+    description: Palworld Helm chart for Kubernetes
+    digest: 5da146066e833ff9f83c57570e499ef93a7cacf1de6b3d177d034616e1b1ff69
+    home: https://github.com/korax-dev/helm-charts
+    name: palworld
+    sources:
+    - https://github.com/korax-dev/helm-charts
+    - https://github.com/jammsen/docker-palworld-dedicated-server
+    urls:
+    - https://github.com/korax-dev/helm-charts/releases/download/palworld-0.2.3/palworld-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2024-02-17T21:34:24.756816815Z"
     description: Palworld Helm chart for Kubernetes
     digest: fbf79a3db18dd8435fb2970ef96e9d466d88a1357e9c2d1e140b4eb095cf8c70
@@ -15,6 +28,19 @@ entries:
     - https://github.com/caleb-devops/helm-charts/releases/download/palworld-0.2.1/palworld-0.2.1.tgz
     version: 0.2.1
   sons-of-the-forest:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2024-10-26T17:15:36.164593297Z"
+    description: Sons of the Forest Helm chart for Kubernetes
+    digest: aebb2de94ce5bca8640dc672de12c1d12929c99f9878a80c01e6c6da6149980d
+    home: https://github.com/korax-dev/helm-charts
+    name: sons-of-the-forest
+    sources:
+    - https://github.com/korax-dev/helm-charts
+    - https://github.com/jammsen/docker-sons-of-the-forest-dedicated-server
+    urls:
+    - https://github.com/korax-dev/helm-charts/releases/download/sons-of-the-forest-0.1.3/sons-of-the-forest-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: latest
     created: "2024-02-17T23:15:10.611265839Z"
@@ -44,6 +70,19 @@ entries:
   vrising:
   - apiVersion: v2
     appVersion: latest
+    created: "2024-10-26T17:15:36.272133026Z"
+    description: V Rising Helm chart for Kubernetes
+    digest: 16427420ccc37adf5585c103b50da8514a6de84091b0fb078a0f2733f68a9f36
+    home: https://github.com/korax-dev/helm-charts
+    name: vrising
+    sources:
+    - https://github.com/korax-dev/helm-charts
+    - https://github.com/TrueOsiris/docker-vrising
+    urls:
+    - https://github.com/korax-dev/helm-charts/releases/download/vrising-0.1.1/vrising-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2024-05-11T03:59:14.108742095Z"
     description: V Rising Helm chart for Kubernetes
     digest: 99b30264385de8bec39e3da251878cc7675947a2376acb737840739c6143fbf4
@@ -55,4 +94,4 @@ entries:
     urls:
     - https://github.com/caleb-devops/helm-charts/releases/download/vrising-0.1.0/vrising-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-11T03:59:14.108756221Z"
+generated: "2024-10-26T17:15:36.272175405Z"
