@@ -1,0 +1,31 @@
+{{- $setNodePorts := (or (eq .Values.service.type "NodePort") (eq .Values.service.type "LoadBalancer")) }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "satisfactory.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "satisfactory.labels" . | nindent 4 }}
+  {{- with .Values.service.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.gamePort }}
+      targetPort: api
+      protocol: TCP
+      name: api
+      {{- if (and $setNodePorts (not (empty .Values.service.gameNodePort))) }}
+      nodePort: {{ .Values.service.gameNodePort }}
+      {{- end }}
+    - port: {{ .Values.service.gamePort }}
+      targetPort: game
+      protocol: UDP
+      name: game
+      {{- if (and $setNodePorts (not (empty .Values.service.gameNodePort))) }}
+      nodePort: {{ .Values.service.gameNodePort }}
+      {{- end }}
+  selector:
+    {{- include "satisfactory.selectorLabels" . | nindent 4 }}

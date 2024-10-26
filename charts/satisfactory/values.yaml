@@ -1,0 +1,88 @@
+image:
+  repository: wolveix/satisfactory-server
+  pullPolicy: ""
+  tag: ""
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+podLabels: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: LoadBalancer
+  ## Example annotations for kube-vip or MetalLB to assign a specific IP to the LoadBalancer
+  annotations: {}
+    # kube-vip.io/loadbalancerIPs: 192.168.1.100
+    # metallb.universe.tf/loadBalancerIPs: 192.168.1.100
+  gamePort: 7777
+  # gameNodePort: ""
+
+resources:
+  # limits:
+  #   cpu: 4
+  #   memory: 32Gi
+  requests:
+    cpu: 2
+    memory: 12Gi
+
+## Enable persistence using Persistent Volume Claims
+## ref: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+##
+persistence:
+  enabled: true
+
+  ## A manually managed Persistent Volume and Claim
+  ## Requires persistence.enabled: true
+  ## If defined, PVC must be created manually before volume will be bound
+  existingClaim: ""
+
+  ## If defined, storageClassName: <storageClass>
+  ## If set to "-", storageClassName: "", which disables dynamic provisioning
+  ## If undefined (the default) or set to null, no storageClassName spec is
+  ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+  ##   GKE, AWS & OpenStack)
+  ##
+  ## Storage class of PV to bind. By default it looks for standard storage class.
+  ## If the PV uses a different storage class, specify that here.
+  # storageClass: ""
+  accessMode: ReadWriteOnce
+  size: 25Gi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+## Environment variables to add to the deployment
+## ref: https://github.com/wolveix/satisfactory-server?tab=readme-ov-file#environment-variables
+##
+env:
+  AUTOSAVENUM: 5
+  DEBUG: false
+  DISABLESEASONALEVENTS: false
+  LOG: false
+  MAXOBJECTS: 2162688
+  MAXPLAYERS: 4
+  MAXTICKRATE: 30
+  PGID: 1000
+  PUID: 1000
+  ROOTLESS: false
+  SERVERSTREAMING: true
+  SKIPUPDATE: false
+  STEAMBETA: false
+  TIMEOUT: 30
+  VMOVERRIDE: false

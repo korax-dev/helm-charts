@@ -1,0 +1,9 @@
+apiVersion: v2
+name: satisfactory
+version: 0.1.0
+description: Satisfactory Helm chart for Kubernetes
+home: https://github.com/korax-dev/helm-charts
+sources:
+  - https://github.com/korax-dev/helm-charts
+  - https://github.com/wolveix/satisfactory-server
+appVersion: "latest"
