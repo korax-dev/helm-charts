@@ -1,9 +1,9 @@
 apiVersion: v2
 name: vrising
-version: 0.1.0
+version: 0.1.1
 description: V Rising Helm chart for Kubernetes
-home: https://github.com/caleb-devops/helm-charts
+home: https://github.com/korax-dev/helm-charts
 sources:
-  - https://github.com/caleb-devops/helm-charts
+  - https://github.com/korax-dev/helm-charts
   - https://github.com/TrueOsiris/docker-vrising
 appVersion: "latest"

@@ -1,6 +1,6 @@
 # Palworld Helm Chart
 
-[![GitHub Release](https://img.shields.io/github/v/release/caleb-devops/helm-charts?filter=palworld*)](https://github.com/caleb-devops/helm-charts/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/korax-dev/helm-charts?filter=palworld*)](https://github.com/korax-dev/helm-charts/releases)
 
 This chart installs [docker-palworld-dedicated-server](https://github.com/jammsen/docker-palworld-dedicated-server) on a [Kubernetes](http://kubernetes.io/) cluster using the [Helm](https://helm.sh/) package manager.
 
@@ -12,23 +12,23 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 Once Helm has been set up correctly, add the repo as follows:
 
 ```sh
-helm repo add caleb-devops https://caleb-devops.github.io/helm-charts
+helm repo add korax-dev https://korax-dev.github.io/helm-charts
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo
-caleb-devops` to see the charts.
+korax-dev` to see the charts.
 
 To install the palworld chart:
 
 ```sh
-helm install palworld caleb-devops/palworld
+helm install palworld korax-dev/palworld
 ```
 
 To upgrade the palworld chart:
 
 ```sh
-helm upgrade palworld caleb-devops/palworld
+helm upgrade palworld korax-dev/palworld
 ```
 
 To uninstall the chart:

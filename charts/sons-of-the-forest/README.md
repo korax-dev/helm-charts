@@ -1,6 +1,6 @@
 # Sons of the Forest Helm Chart
 
-[![GitHub Release](https://img.shields.io/github/v/release/caleb-devops/helm-charts?filter=sons-of-the-forest*)](https://github.com/caleb-devops/helm-charts/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/korax-dev/helm-charts?filter=sons-of-the-forest*)](https://github.com/korax-dev/helm-charts/releases)
 
 This chart installs [docker-sons-of-the-forest-dedicated-server](https://github.com/jammsen/docker-sons-of-the-forest-dedicated-server) on a [Kubernetes](http://kubernetes.io/) cluster using the [Helm](https://helm.sh/) package manager.
 
@@ -12,23 +12,23 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 Once Helm has been set up correctly, add the repo as follows:
 
 ```sh
-helm repo add caleb-devops https://caleb-devops.github.io/helm-charts
+helm repo add korax-dev https://korax-dev.github.io/helm-charts
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo
-caleb-devops` to see the charts.
+korax-dev` to see the charts.
 
 To install the  chart:
 
 ```sh
-helm install sons-of-the-forest caleb-devops/sons-of-the-forest
+helm install sons-of-the-forest korax-dev/sons-of-the-forest
 ```
 
 To upgrade the sons-of-the-forest chart:
 
 ```sh
-helm upgrade sons-of-the-forest caleb-devops/sons-of-the-forest
+helm upgrade sons-of-the-forest korax-dev/sons-of-the-forest
 ```
 
 To uninstall the chart:

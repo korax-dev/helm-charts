@@ -1,6 +1,6 @@
 # V Rising Helm Chart
 
-[![GitHub Release](https://img.shields.io/github/v/release/caleb-devops/helm-charts?filter=vrising*)](https://github.com/caleb-devops/helm-charts/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/korax-dev/helm-charts?filter=vrising*)](https://github.com/korax-dev/helm-charts/releases)
 
 This chart installs [docker-vrising](https://github.com/TrueOsiris/docker-vrising) on a [Kubernetes](http://kubernetes.io/) cluster using the [Helm](https://helm.sh/) package manager.
 
@@ -12,23 +12,23 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 Once Helm has been set up correctly, add the repo as follows:
 
 ```sh
-helm repo add caleb-devops https://caleb-devops.github.io/helm-charts
+helm repo add korax-dev https://korax-dev.github.io/helm-charts
 ```
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo
-caleb-devops` to see the charts.
+korax-dev` to see the charts.
 
 To install the  chart:
 
 ```sh
-helm install vrising caleb-devops/vrising
+helm install vrising korax-dev/vrising
 ```
 
 To upgrade the vrising chart:
 
 ```sh
-helm upgrade vrising caleb-devops/vrising
+helm upgrade vrising korax-dev/vrising
 ```
 
 To uninstall the chart:

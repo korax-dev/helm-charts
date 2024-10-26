@@ -1,9 +1,9 @@
 apiVersion: v2
 name: sons-of-the-forest
-version: 0.1.2
+version: 0.1.3
 description: Sons of the Forest Helm chart for Kubernetes
-home: https://github.com/caleb-devops/helm-charts
+home: https://github.com/korax-dev/helm-charts
 sources:
-  - https://github.com/caleb-devops/helm-charts
+  - https://github.com/korax-dev/helm-charts
   - https://github.com/jammsen/docker-sons-of-the-forest-dedicated-server
 appVersion: "latest"
